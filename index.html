@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Suresh jangid</title>
+
+    <!-- faviIcon -->
+    <link rel="apple-touch-icon" sizes="250x250" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- navigation(navbar) -->
+
+    <nav class="navbar">
+        <div class="logoPic"></div>
+        <img src="image/logo3.png" alt="Logo of Website" id="logo">
+        </div>
+
+        <ul>
+            <li><a class="list" href="">Home</a></li>
+            <li><a class="list" href="#offers">what do we offer</a></li>
+            <li><a class="list" href="#offers"> my skills </a></li>
+            <li><a class="list" href="#about">about me</a></li>
+            <li><a class="list" href="#imgGallerys"> my designe </a></li>
+            <li><a class="list" href="#blackForms">contact</a></li>
+        </ul>
+
+        <!--middel text -->
+
+        <h1 class="main">welcome to my <span class="textChange"></span></h1>
+
+        <p class="designer">ui ux designer & front-end web developer</p>
+
+        <div class="hire">
+
+            <a href="download.html" target="_blank"> <button class="btn1">Curriculum vitae (cv)</button></a>
+
+            <a href="#blackForms"><button class="btn">hire me</button></a>
+
+        </div>
+
+        <!-- socailMedial -->
+
+        <div class="socailMedial">
+
+            <a class="FI1" href="https://www.facebook.com/profile.php?id=100013646652972" target="_blank"><img
+                    src="image/facebook.png" alt="facebookLink"></a>
+
+
+            <a class="FI1" href="https://www.instagram.com/suresh_jangid14/?hl=en" target="_blank"> <img
+                    src="image/Instagram.png" alt="InstagramLink"></a>
+        </div>
+
+    </nav>
+
+    <!-- what to we offer -->
+    <section id="offers">
+
+        <h1 class="offer" data-aos="flip-left" data-aos-duration="1000">what do we offer</h1>
+
+
+        <img id="knowlege" src="image/skills.png" alt="what do we offer" data-aos="flip-left"
+            data-aos-duration="1000"><span class="show1" data-aos="flip-left" data-aos-duration="1000"></span>
+
+        <span class="show2" data-aos="flip-left" data-aos-duration="1000"></span>
+
+        <span class="show3" data-aos="flip-left" data-aos-duration="1000"></span>
+
+        <span class="show4" data-aos="flip-left" data-aos-duration="1000"></span>
+
+        <!-- my skills -->
+
+        <h1 class="mySkills" data-aos="fade-right"> my Skills</h1>
+
+        <div class="skillspic" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+            <img class="MyskillsPic" src="image/Myskills.png" alt="Myskills">
+
+        </div>
+
+        <!-- About CEO -->
+
+        <div class="aboutMe" id="about">
+
+            <img class="ceoPic" src="image/ceo.png " alt="CEO Photo">
+
+            <p class="aboutCEO"> Suresh Jangid Is a UI UX Designer &
+                Front-End Web Developer. And Student Of
+                Bachelor Of Computer Application (BCA). </p>
+
+            <p class="webCEO">Suresh Jangid , <span class="changeColor"></span></p>
+        </div>
+
+    </section>
+
+    <!-- My designe -->
+
+    <section id="imgGallerys" data-aos="zoom-in" data-aos-duration="1000">
+
+        <h1 class="imgGallery">my designe</h1>
+
+        <div class="gallery">
+
+            <a href="image/big 1.png"><img class="p1" src="image/small 1.png" alt="My designe1" width="350px"
+                    id="pics1"></a>
+
+            <a href="image/big 2.png"> <img class="p2" src="image/small 2.png" alt="My designe2" width="350px"
+                    height="206px"></a>
+
+            <a href="image/big 3.png"><img class="p3" src="image/small 3.png" alt="My designe3" width="350px"
+                    height="206px"></a>
+
+            <a href="image/big 4.png"> <img class="p4" src="image/small 4.png" alt="My designe4" width="350px"
+                    height="206px"></a>
+        </div>
+
+    </section>
+
+    <!-- Contact  -->
+
+    <form class="blackForm" id="blackForms" onsubmit="send()" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+
+        <h1 class="contactForm">contact</h1>
+
+        <input type="text" name="name" placeholder="Enter your Name" id="name">
+
+        <input type="email" name="email" placeholder="Enter your Eamil" id="email">
+
+        <input type="text" name="message" placeholder="Write a message for us " id="message">
+
+        <button class="btn3">send</button></a>
+
+    </form>
+
+    <!-- Website Footer -->
+
+    <footer>
+
+        <p class="mainFooter"> 2021 &#169; | CEO - Suresh Jangid | Design By Suresh Jangid | +91 8106296942</p>
+
+    </footer>
+
+
+    <!-- animation link -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        AOS.init({
+            offset: 250
+        });
+
+        function send() {
+
+            const forms = document.getElementById("blackForms");
+
+            const nameFirst = document.getElementById("name");
+
+            const YourEmail = document.getElementById("email");
+
+            const YourMessage = document.getElementById("message");
+
+            if (nameFirst.value.length <= 0) {
+
+                alert("Enter your Name")
+
+                nameFirst.focus;
+
+                return false;
+            }
+            if (YourEmail.value.length <= 0) {
+
+                alert("Enter your Email");
+
+                email.focus;
+
+                return false;
+            }
+
+        }
+
+
+        let tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+        tl.to('.navbar', { x: "-150%", duration: 0, opacity: 0, stagger: 0.25 });
+
+        tl.to('.navbar', { x: "0", duration: 2, opacity: 1, delay: 0.30 });
+
+        tl.to('.main', { y: "-150%", duration: 0, delay: 0, opacity: 0 });
+
+        tl.to('.main', { y: "0", duration: 2.2, opacity: 1 });
+
+    </script>
+</body>
+
+</html>

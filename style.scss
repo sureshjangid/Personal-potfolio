@@ -1,0 +1,1529 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    }
+
+    // navigation(navbar)----------------------------------------------------- 
+nav{
+    width: 100%;
+    height: 100vh;
+    background-color: black  ;
+}
+#logo{
+width: 200px;
+height: 100px;
+position: relative;
+top: 0;
+left: 50px;
+
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+
+    & li{
+    list-style: none;
+     transform:  translate(250px,-63px);
+       
+        & a{
+            text-decoration: none;
+            margin: 15px;
+            color: white;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Montserrat';
+            transition: all 0.4s linear;
+             nav &:before{
+                content: "";
+              position: absolute;
+              top: 110%;
+              left: 20px;
+              width: 0px;
+              height: 2px;
+              border-bottom: 2px solid orangered;
+              transition: all 0.4s linear ;
+            
+             
+            
+            }
+        }
+    }
+
+}
+
+  a:hover::before{
+    width: 70%;
+}
+ a:hover{
+    color: orangered;
+   
+}
+  
+// middel text---------------------------------------------------------------
+.main{
+    color: orangered;
+     position: absolute;
+     top: 264px;
+     left: 309px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+     text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat';
+    
+    
+}
+.designer{
+    color: white;
+    position: absolute;
+    top: 326px;
+    left: 445px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid orangered;
+    
+}
+.textChange:after{
+content: '';
+animation: text 3.5s ease-in-out infinite;
+color:#fed330;
+}
+@keyframes text{
+    0%{
+        content: "website";
+    }
+    100%{
+        content: "portfolio";
+    }
+}
+.hire{
+position: absolute;
+top: 365px;
+    left: 510px;
+
+.btn{
+    margin: 12px;
+    color: white;
+    background-color: orangered;
+    padding: 15px 10px;
+    text-decoration: none;
+    outline: none;
+border: none;
+cursor: pointer;
+text-transform: uppercase;
+font-weight: bold;
+font-family: 'Montserrat';
+position: relative;
+z-index: 1;
+overflow: hidden;
+}
+.btn1{
+    margin: 12px;
+    color:white;
+    background-color: orangered;
+    padding: 15px 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    transition: all 0.4s linear;
+ 
+   
+}
+.btn1:hover{
+    background-color: yellow;
+    color: black;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.4s linear;
+    
+}
+.btn:hover{
+    color:orangered;
+}
+.btn:hover::before{
+    transform: translateX(0);
+    z-index: -1;
+  
+}}
+
+// what to we offer----------------------------------------------------------
+section{
+    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+ 
+    
+  
+}
+.offer{
+color: orangered;
+position: absolute;
+top: 33px;
+left: 120px;
+text-transform: uppercase;
+font-family: 'Montserrat';
+}
+#knowlege{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+   
+  
+    
+}
+.show1::after
+{
+    content: "";
+    animation: number1 100000s ease-out infinite;
+    
+}
+.show1{
+    position: absolute;
+    top: 120px;
+    left: 550px;
+    text-shadow: 1px 2px 3px black;
+    
+}
+@keyframes number1{
+    0%{
+        content: "80%";
+    }
+  
+}
+.show2::after
+{
+    content: "";
+    animation: number2 100000s ease-out infinite;
+}
+.show2{
+    position: absolute;
+    top: 161px;
+    left: 550px;
+    text-shadow: 1px 2px 3px black;
+    
+}
+@keyframes number2{
+    0%{
+        content: "72%";
+    }
+  
+}
+.show3::after
+{
+    content: "";
+    animation: number3 100000s ease-out infinite;
+}
+.show3{
+    position: absolute;
+    top: 210px;
+    left: 550px;
+    text-shadow: 1px 2px 3px black;
+    
+}
+@keyframes number3{
+    0%{
+        content: "56%";
+    }
+  
+}
+
+.show4::after
+{
+    content: "";
+    animation: number4 100000s ease-out infinite;
+}
+.show4{
+    position: absolute;
+    top: 260px;
+    left: 550px;
+    text-shadow: 1px 2px 3px black;
+    
+}
+@keyframes number4{
+    0%{
+        content: "70%";
+    }
+  
+}
+// My Skills----------------------------------------------------------------
+.mySkills{
+    position: absolute;
+    right: 250px;
+    top: 33px;
+    text-transform: uppercase;
+    color: orangered;
+    font-family: 'Montserrat';
+}
+.skillspic{
+    position: absolute;
+    top: 85px;
+    right: 88px;
+}
+    
+.MyskillsPic{
+    width: 500px;
+   
+}
+
+// About CEO--------------------------------------------------------------
+
+.aboutMe::before{
+    content: "ABOUT ME";
+    position: absolute;
+    top: 12px;
+    left: 590px;
+    color:orangered;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+
+}
+.aboutMe{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    position: absolute;
+    top: 400px;
+}
+.ceoPic{
+      border-radius: 100%;
+    width: 200px;
+    transform: translate(550px,60px);
+    // animation:  picChange 1s linear infinite;
+}
+
+.aboutCEO{
+    color: white;
+    width: 380px;
+    font-size: 1rem;
+    text-align: center;
+    transform: translate(470px, 83px);
+     font-family: 'Dosis';
+    font-weight: bolder;
+}
+.webCEO{
+    
+    color: yellow;
+    position: absolute;
+    left: 580px;
+    top: 354px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    
+}
+.changeColor::before{
+content: "";
+animation: colorChange 1s linear infinite;
+transition: all 2s linear;
+}
+@keyframes colorChange{
+    0%{
+        content: "CEO";
+        color: white;
+    }
+    25%{
+        content: "CEO";
+        color: orangered;
+    }
+    50%{
+        content: "CEO";
+        color: gray;
+    }
+    75%{
+        content: "CEO";
+        color: hotpink;
+    }
+    100%{
+        content: "CEO";
+        color:lightseagreen;
+    }
+}
+
+// My designe---------------------------------------------------------------
+.imgGallery{
+    color: orangered;
+    position: absolute;
+    top: -53px;
+    left: 569px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+.gallery{
+    margin: 229px 266px;
+}
+.gallery img{
+    margin:10px 15px;
+    box-shadow: 5px 10px 9px black;
+    filter: grayscale(100%);
+    transition:  0.4s linear;
+    cursor: pointer;
+
+}
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+
+}
+
+// Contact-----------------------------------------------------------------
+
+.blackForm{
+    width: 50%;
+    background: black;
+    height: 50vh;
+   
+    position: relative;
+    top: -131px;
+    left: 310px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.contactForm{
+    color: orangered;
+    transform: translate(260px, -69px);
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+
+}
+input{
+    width: 50%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    transform: translate(179px, 0px);
+    padding:11px;
+    color: white;
+    
+}
+
+
+::placeholder{
+    color: white;
+    opacity: 0.7;
+}
+.btn3{
+    width: 66px;
+    padding: 5px;
+    transform: translate(302px, 23px);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+
+}
+.btn3:hover{
+    color:white;
+    background-color: orangered;
+}
+footer{
+    // width: 100%;
+     max-width: 100%;
+    background-color: black;
+    height: 8vh;
+}
+
+.mainFooter{
+    color: white;
+    display: flex;
+    justify-content: center;
+transform: translateY(20px);
+}
+// .socail Medial--------------------------------------------------------
+.socailMedial{
+    display: flex;
+    position: fixed;
+    top: 276px;
+    flex-direction: column;
+}
+
+.FI1 img{
+    width: 40px;
+  transition: all 0.4s linear;
+
+    
+}
+.FI1 img:hover{
+    width: 45px;
+}
+
+// Media only for small screen-------------------------------------------
+
+ @media(max-width:1200px){
+  nav{
+      max-width: 100%;
+      height: 100vh;
+  }
+  nav ul li{
+     transform:translate(185px, -63px);
+  }
+  nav ul li a {
+      font-size: 11px;
+
+ }
+ nav ul li  a:hover::before {
+     width: 60%;
+   }
+ #logo {
+     width: 148px;
+     height: 91px;
+     position: relative;
+     top: 0;
+    left: 118px;
+  }
+   .main {
+    color: orangered;
+    position: absolute;
+    top: 264px;
+    left: 373px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat';
+  }
+
+   .designer {
+     color: white;
+     position: absolute;
+     top: 299px;
+     left: 414px;
+     font-size: 13px;
+     text-align: center;
+     text-transform: uppercase;
+     border-bottom: 1px solid orangered;
+   }
+   .hire {
+     position: absolute;
+     top: 326px;
+     left: 456px;
+   }
+   .hire .btn {
+     margin: 0px;
+     color: white;
+     background-color: orangered;
+     padding: 12px 10px;
+     text-decoration: none;
+     outline: none;
+     border: none;
+     cursor: pointer;
+     text-transform: uppercase;
+     font-weight: bold;
+     font-family: 'Montserrat';
+     position: relative;
+     z-index: 1;
+     font-size: 10px;
+     overflow: hidden;
+   }
+
+   .hire .btn1 {
+     margin: 0px;
+     color: white;
+     background-color: orangered;
+     padding: 12px 10px;
+     text-decoration: none;
+     outline: none;
+     border: none;
+     font-size: 10px;
+     cursor: pointer;
+     text-transform: uppercase;
+     font-family: 'Montserrat';
+     font-weight: bold;
+     transition: all 0.4s linear;
+     transition: all 0.4s linear;
+   }
+   .socailMedial {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     position: fixed;
+     top: 276px;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+   }
+
+   .FI1 img {
+     width:30px;
+   }
+  
+   .FI1 img:hover {
+     width: 35px;
+   }
+   .offer {
+     color: orangered;
+     position: absolute;
+     top: 50px;
+     left: 143px;
+     text-transform: uppercase;
+     font-family: 'Montserrat';
+     font-size: 20px;
+   }
+   #knowlege {
+     position: absolute;
+     top: 100px;
+     left: 60px;
+     width: 400px;
+   }
+ .show1,.show2,.show3,.show4{
+     display: none;
+ }
+ .mySkills {
+     position: absolute;
+     right: 295px;
+     top: 52px;
+     text-transform: uppercase;
+     color: orangered;
+     font-family: 'Montserrat';
+     font-size: 20px;
+   }
+
+   .skillspic {
+     position: absolute;
+     top: 95px;
+     right: 160px;
+   }
+  
+   .MyskillsPic {
+     width: 400px;
+   }
+
+   .aboutMe::before {
+     content: "ABOUT ME";
+     position: absolute;
+     top: 12px;
+     left: 538px;
+     color: orangered;
+     font-family: 'Montserrat';
+     font-size: 20px;
+   }
+
+   .aboutMe {
+     width: 100%;
+     height: 51vh;
+     background-color: black;
+     position: absolute;
+     top: 400px;
+   }
+  
+   .ceoPic {
+     border-radius: 100%;
+     width: 152px;
+     transform: translate(514px, 55px);
+   }
+
+   .aboutCEO {
+     color: white;
+     width: 380px;
+   font-size: 15px;
+   text-align: center;
+   transform: translate(410px, 63px);
+   font-family: 'Dosis';
+  font-weight: bolder;
+ }
+   .webCEO {
+     color: yellow;
+     position: absolute;
+     left: 510px;
+    top: 259px;
+     font-family: sans-serif;
+     font-weight: 700;
+     text-transform: capitalize;
+   }
+
+  
+
+   .imgGallery {
+     color: orangered;
+     position: absolute;
+     top: -33px;
+     left: 538px;
+     font-size: 20px;
+     text-transform: uppercase;
+     font-family: 'Montserrat';;
+   }
+
+    .gallery {
+      margin: 229px 266px;
+   }
+
+   .gallery img {
+     margin: 13px 15px;
+     width: 300px;
+             box-shadow: 5px 10px 9px black;
+            filter: grayscale(100%);
+    transition: 0.4s linear;
+    cursor: pointer;
+  }
+  .blackForm {
+     width: 50%;
+     background: black;
+     height: 50vh;
+     position: relative;
+     top: -50px;
+     left: 310px;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     -webkit-box-orient: vertical;
+     direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+   }
+  
+   .contactForm {
+     color: orangered;
+   transform: translate(260px, -69px);
+   transform: translate(242px, -40px);
+   font-family: 'Montserrat';
+   text-transform: uppercase;
+     font-size: 20px;
+   }
+  
+   input {
+     width: 50%;
+     background: none;
+     outline: none;
+     border: none;
+     border-bottom: 2px solid white;
+     transform: translate(153px, -17px);
+     padding: 11px;
+     color: white;
+   }
+ .btn3 {
+     width: 66px;
+     padding: 5px;
+ 
+   transform: translate(256px, 3px);
+     text-transform: uppercase;
+     cursor: pointer;
+     -webkit-transition: all 0.4s linear;
+   transition: all 0.4s linear;
+     border: none;
+     outline: none;
+    border-radius: 50px;
+}
+ footer {
+     max-width: 100%;
+    background-color: black;
+    height: 8vh;
+   }
+
+   .mainFooter {
+     color: white;
+     display: -webkit-box;
+   display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+   font-size: 13px;
+             transform: translateY(16px);
+ }
+ }
+@media (max-width:980px){
+
+    nav {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+      }
+      
+      #logo {
+        width: 150px;
+        height: 80px;
+        position: relative;
+        top: 0;
+        left: 50px;
+      }
+      
+      ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+ 
+            }
+            ul li {
+                list-style: none;
+               
+                        transform: translate(150px, -55px);
+              }
+              
+              ul li a {
+                text-decoration: none;
+                margin: 15px;
+        
+                color: orangered;
+                font-size: 10px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: 'Montserrat';
+                -webkit-transition: all 0.4s linear;
+                transition: all 0.4s linear;
+              }
+
+              .main {
+                color: orangered;
+                position: absolute;
+                top: 241px;
+                left: 301px;
+                font-size: 21px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: 'Montserrat';
+              }
+            
+              .designer {
+                color: white;
+                position: absolute;
+                top: 272px;
+                left: 318px;
+                font-size: 12px;
+                text-align: center;
+                text-transform: uppercase;
+                border-bottom: 1px solid orangered;
+              }
+            
+              .hire {
+                position: absolute;
+                top: 301px;
+                left: 347px;
+              }
+              .hire .btn {
+                margin: 0px;
+                color: white;
+                background-color: orangered;
+                padding: 12px 10px;
+                text-decoration: none;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: 'Montserrat';
+                position: relative;
+                z-index: 1;
+                font-size: 10px;
+                overflow: hidden;
+              }
+              
+              .hire .btn1 {
+                margin: 0px;
+                color: white;
+                background-color: orangered;
+                padding: 12px 10px;
+                text-decoration: none;
+                outline: none;
+                border: none;
+                font-size: 10px;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                font-weight: bold;
+                transition: all 0.4s linear;
+                transition: all 0.4s linear;
+              }
+            
+              .socailMedial {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                position: fixed;
+                top: 250pxpx;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+              }
+            
+              .offer {
+                color: orangered;
+                position: absolute;
+                top: 33px;
+                left: 120px;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+              }
+              
+              #knowlege {
+                position: absolute;
+                top: 114px;
+                left: 60px;
+                width: 350px
+              }
+              .mySkills {
+                position: absolute;
+                right: 250px;
+                top: 33px;
+                text-transform: uppercase;
+                color: orangered;
+                font-family: 'Montserrat';
+              }
+              
+              .skillspic {
+                position: absolute;
+                top: 102px;
+                right: 92px;
+              }
+              
+              .MyskillsPic {
+                width: 350px;
+              }
+              
+              .aboutMe::before {
+                content: "ABOUT ME";
+                position: absolute;
+                top: 12px;
+    left: 420px;
+                color: orangered;
+                font-family: 'Montserrat';
+                font-size: 1.5rem;
+              }
+              
+              .aboutMe {
+                width: 100%;
+                height: 60vh;
+                background-color: black;
+                position: absolute;
+                top: 400px;
+              }
+              
+              .ceoPic {
+                border-radius: 100%;
+                width: 135px;
+                
+                        transform:  translate(418px, 60px);
+              }
+              
+              .aboutCEO {
+                color: white;
+                width: 380px;
+                font-size: 1rem;
+                text-align: center;
+                
+                        transform: translate(310px, 67px);
+                font-family: 'Dosis';
+                font-weight: bolder;
+              }
+              
+              .webCEO {
+                color: yellow;
+                position: absolute;
+                left: 422px;
+                top: 270px;
+                font-family: sans-serif;
+                font-weight: 700;
+                text-transform: capitalize;
+              }
+        
+              .imgGallery {
+                color: orangered;
+                position: absolute;
+                top: -40px;
+                left: 426px;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+              }
+              
+              .gallery {
+                margin: 229px 266px;
+              }
+              
+              .gallery img {
+                margin: 15px auto;
+                width: 266px;
+                height: 125px;
+                display: flex;
+                transform: translate(10px, -6px);
+                
+                        box-shadow: 5px 10px 9px black;
+      
+                      filter: grayscale(100%);
+              
+                transition: 0.4s linear;
+                cursor: pointer;
+              }
+              
+              .gallery img:hover {
+                -webkit-filter: grayscale(0);
+                        filter: grayscale(0);
+                -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+              }
+              
+              .blackForm {
+                width: 41%;
+    background: black;
+    height: 40vh;
+    position: relative;
+    top: -8px;
+    left: 310px;
+    display: flex;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+              }
+              
+              .contactForm {
+                color: orangered;
+                
+                transform: translate(140px, -20px);
+                font-family: 'Montserrat';
+                text-transform: uppercase;
+              }
+              
+              input {
+                width: 50%;
+                background: none;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid white;
+                
+                        transform: translate(110px, -7px);
+                padding: 11px;
+                color: white;
+              }
+            
+              
+              .btn3 {
+                width: 66px;
+                padding: 5px;
+                
+                transform: translate(155px, -1px);
+                text-transform: uppercase;
+                cursor: pointer;
+                -webkit-transition: all 0.4s linear;
+                transition: all 0.4s linear;
+                border: none;
+                outline: none;
+                border-radius: 50px;
+              }
+              
+
+}
+@media(max-width:880px){
+
+  nav{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  
+  
+
+}
+#logo{
+  width: 168px;
+  height: 78px;
+position: relative;
+top: 0;
+left: 50px;
+}
+.aboutMe {
+  width: 100%;
+  height: 50vh;
+  background-color: black;
+  position: absolute;
+  top: 319px;
+}
+.ceoPic {
+  border-radius: 100%;
+  width: 124px;
+          transform: translate(414px, 50px);
+}
+.aboutCEO {
+  color: white;
+  width: 380px;
+  font-size: 16px;
+  text-align: center;
+  transform: translate(285px, 52px);
+  font-family: 'Dosis';
+  font-weight: bolder;
+}
+.webCEO {
+  color: yellow;
+  position: absolute;
+  left: 398px;
+  top: 247px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.imgGallery {
+  color: orangered;
+  position: absolute;
+  top: -175px;
+  left: 374px;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+}
+.gallery {
+  margin: 229px 266px;
+}
+.gallery img {
+  margin: 15px auto;
+  width: 266px;
+  height: 125px;
+  display: flex;
+  transform: translate(0px, -131px);
+  box-shadow: 5px 10px 9px black;
+  filter: grayscale(100%);
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.blackForm {
+  width: 41%;
+  background: black;
+  height: 40vh;
+  position: relative;
+  top: -64px;
+  left: 270px;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+}
+
+@media(max-width:768px){
+  nav {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  }
+  #logo {
+    width: 130px;
+    height: 68px;
+    position: relative;
+    top: 10px;
+    left: 322px;
+  }
+
+  ul{
+
+    display: flex;
+            justify-content: center;
+  }
+  
+  ul li {
+    list-style: none;
+    transform: translate(7px, -2px) !important ;
+   
+  }
+  
+  ul li a {
+    text-decoration: none;
+    margin: 15px;
+    color: orangered;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+  }
+  .main {
+    color: orangered;
+    position: absolute;
+    top: 229px;
+    left: 198px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat';
+  }
+  
+  .designer {
+    color: white;
+    position: absolute;
+    top: 267px;
+    left: 219px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid orangered;
+  }
+    .hire {
+      position: absolute;
+      top: 297px;
+    left: 275px;
+    }
+    
+    .offer {
+      color: orangered;
+      position: absolute;
+      top: 34px;
+    left: 112px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: 'Montserrat';
+    }
+    #knowlege {
+      position: absolute;
+      top: 114px;
+      left: 60px;
+      width: 350px;
+    }
+    .mySkills {
+      position: absolute;
+      right: 161px;
+      top: 32px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: orangered;
+      font-family: 'Montserrat';
+    }
+    .skillspic {
+      position: absolute;
+      top: 115px;
+      right: 87px;
+    }
+    .MyskillsPic {
+      width: 250px;
+    }
+    .aboutMe::before {
+      content: "ABOUT ME";
+      position: absolute;
+      top: 12px;
+      left: 336px;
+      color: orangered;
+      font-family: 'Montserrat';
+      font-size: 20px;
+    }
+
+  .aboutMe {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    position: absolute;
+    top: 319px;
+  }
+  .ceoPic {
+    border-radius: 100%;
+    width: 124px;
+    transform: translate(332px, 50px);
+  }
+  .aboutCEO {
+    color: white;
+    width: 380px;
+    font-size: 12px;
+    text-align: center;
+    transform: translate(202px, 52px);
+    font-family: 'Dosis';
+    font-weight: bolder;
+  }
+  .webCEO {
+    color: yellow;
+    position: absolute;
+    left: 320px;
+    top: 220px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .imgGallery {
+    color: orangered;
+    position: absolute;
+    top: -175px;
+    left: 329px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+  }
+  .gallery {
+    margin: 229px 266px;
+  }
+  .gallery img {
+    margin: 15px auto;
+    width: 266px;
+    height: 125px;
+    display: flex;
+   transform: translate(0px, -131px);
+    box-shadow: 5px 10px 9px black;
+    filter: grayscale(100%);
+    transition: 0.4s linear;
+    cursor: pointer;
+  }
+  .blackForm {
+    width: 56%;
+    background: black;
+    height: 40vh;
+    position: relative;
+    top: -75px;
+    left: 189px;
+    display: flex;
+    justify-content: center;
+  
+    flex-direction: column;
+  }.contactForm {
+    color: orangered;
+ 
+  transform: translate(155px, -23px);
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+    font-size: 20px;
+  }
+ 
+  input {
+    width: 50%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    transform: translate(104px, -17px);
+    padding: 11px;
+    color: white;
+  }
+  footer {
+    max-width: 100%;
+   background-color: black;
+   height: 8vh;
+  }
+
+  .mainFooter {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    transform: translateY(16px);
+}
+}
+@media(max-width:480px){
+  nav {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  }
+  #logo {
+    width: 141px;
+    height: 82px;
+    position: relative;
+    top: -5px;
+    left: 180px;
+  }
+
+  ul{
+
+    display: flex;
+            justify-content: center;
+  }
+  
+  ul li {
+    list-style: none;
+    transform: translate(7px, -2px) !important ;
+   
+  }
+  
+  ul li a {
+    text-decoration: none;
+    margin: 15px;
+    color: orangered;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+  }
+  .main {
+    color: orangered;
+    position: absolute;
+    top: 229px;
+    left: 198px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat';
+  }
+  
+  .designer {
+    color: white;
+    position: absolute;
+    top: 267px;
+    left: 219px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid orangered;
+  }
+    .hire {
+      position: absolute;
+      top: 297px;
+    left: 275px;
+    }
+    
+    .offer {
+      color: orangered;
+      position: absolute;
+      top: 34px;
+    left: 112px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: 'Montserrat';
+    }
+    #knowlege {
+      position: absolute;
+      top: 114px;
+      left: 60px;
+      width: 350px;
+    }
+    .mySkills {
+      position: absolute;
+      right: 161px;
+      top: 32px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: orangered;
+      font-family: 'Montserrat';
+    }
+    .skillspic {
+      position: absolute;
+      top: 115px;
+      right: 87px;
+    }
+    .MyskillsPic {
+      width: 250px;
+    }
+    .aboutMe::before {
+      content: "ABOUT ME";
+      position: absolute;
+      top: 12px;
+      left: 336px;
+      color: orangered;
+      font-family: 'Montserrat';
+      font-size: 20px;
+    }
+
+  .aboutMe {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    position: absolute;
+    top: 319px;
+  }
+  .ceoPic {
+    border-radius: 100%;
+    width: 124px;
+    transform: translate(332px, 50px);
+  }
+  .aboutCEO {
+    color: white;
+    width: 380px;
+    font-size: 12px;
+    text-align: center;
+    transform: translate(202px, 52px);
+    font-family: 'Dosis';
+    font-weight: bolder;
+  }
+  .webCEO {
+    color: yellow;
+    position: absolute;
+    left: 320px;
+    top: 220px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .imgGallery {
+    color: orangered;
+    position: absolute;
+    top: -175px;
+    left: 329px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+  }
+  .gallery {
+    margin: 229px 266px;
+  }
+  .gallery img {
+    margin: 15px auto;
+    width: 266px;
+    height: 125px;
+    display: flex;
+   transform: translate(0px, -131px);
+    box-shadow: 5px 10px 9px black;
+    filter: grayscale(100%);
+    transition: 0.4s linear;
+    cursor: pointer;
+  }
+  .blackForm {
+    width: 56%;
+    background: black;
+    height: 40vh;
+    position: relative;
+    top: -75px;
+    left: 189px;
+    display: flex;
+    justify-content: center;
+  
+    flex-direction: column;
+  }.contactForm {
+    color: orangered;
+ 
+  transform: translate(155px, -23px);
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+    font-size: 20px;
+  }
+ 
+  input {
+    width: 50%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    transform: translate(104px, -17px);
+    padding: 11px;
+    color: white;
+  }
+  footer {
+    max-width: 100%;
+   background-color: black;
+   height: 8vh;
+  }
+
+  .mainFooter {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    transform: translateY(16px);
+}
+
+}
